@@ -3,7 +3,7 @@ DEPSDIR := $(BUILD_DIR)/deps
 
 CC := gcc
 LD := gcc
-CFLAGS:=-Wall -Wpedantic -Wno-unused-variable -I$(DEPSDIR)/include -Os -DNO_FAKE_SNI
+CFLAGS:=-Wall -Wpedantic -Wno-unused-variable -I$(DEPSDIR)/include -Os -DUSE_SEG2_DELAY
 LDFLAGS:=-L$(DEPSDIR)/lib -static
 
 LIBNFNETLINK_CFLAGS := -I$(DEPSDIR)/include
