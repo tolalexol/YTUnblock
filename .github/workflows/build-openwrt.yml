@@ -14,7 +14,7 @@ jobs:
         include:
           - branch: SNAPSHOT
             arch: x86_64
-          - branch: openwrt-21.02
+          - branch: openwrt-23.05
             arch: mipsel_24kc
     container:
       image: openwrt/sdk:${{ matrix.arch }}-${{ matrix.branch }}
